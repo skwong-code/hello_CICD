@@ -18,6 +18,11 @@ jobs:
       - run: npm test
         env:
           CI: true
+message:
+   steps:
+      - run: echo "NPM INSTALL COMPLETE"
+      - run: echo "NPM TEST COMPLETE"
+      
   deploy:
     needs: build
     runs-on: ubuntu-latest
